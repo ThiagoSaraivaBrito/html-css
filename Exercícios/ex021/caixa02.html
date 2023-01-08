@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgrey;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.348);
+        }
+        h1 {
+            box-shadow: 1px 1px 1px black;
+        }
+        nav{
+            box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.348);
+            text-align: center;
+            background-color: blue;
+            padding: 3px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(128, 185, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a > abbr {
+            text-decoration: none;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 40px;
+            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.46);
+        }
+        article{
+            border-radius: 20px;
+            background-color: bisque;
+            padding: 5px;
+            margin: 0px;
+        }
+        article > aside{
+            background-color: rgb(137, 124, 108);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+        footer > p {
+            margin: 0;
+        }
+        div#bola {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px auto 0px auto;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#"><abbr title="teu cu">link</abbr></a>
+            <a href="#"><abbr title="teu cu">link</abbr></a>
+            <a href="#"><abbr title="teu cu">link</abbr></a>
+            <a href="#"><abbr title="teu cu">link</abbr></a>
+            <a href="#"><abbr title="teu cu">link</abbr></a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Lorem ipsum dolor sit amet <span id="magic">consectetur</span> adipisicing elit. Voluptas, magni eius iusto aliquam laborum incidunt, itaque alias, nam quod obcaecati accusamus libero. Nam odio consequuntur expedita deleniti incidunt perspiciatis maiores!</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Lorem? Hagsty!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque libero repudiandae optio autem totam unde dolorem, cumque reprehenderit tenetur reiciendis voluptate architecto harum necessitatibus iure ullam placeat illum aut.</p>
+                <aside>
+                    <p>Escrito por Abrahem Lingtonson</p>
+                </aside>    
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

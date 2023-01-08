@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url();
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(60deg, black, blue);
+            /*
+            Medidas Absolutas
+            cm, mm, in(polegada), px, pt, pc(paica)
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+                /* lighter normal bold bolder */
+                /* 100 - 900 */
+        }
+        h1 {
+            /* font-family: 'Times New Roman', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+
+            /* shorthand font
+            - font-style font-weight font-size font-family
+            */
+            font: italic bolder 2em 'Times New Roman';
+        }
+        h2 {
+            font: bold 3em 'Times New Roman';
+        }
+        #card {
+            text-decoration: underline;
+
+            float: right;
+            
+            background-color: rgb(255, 255, 255);
+            width: 15cm;
+            padding: 15px;
+            border-radius: 30px;
+            margin-bottom: 222px;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <h1>Trabalhando com fontes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero repellat excepturi, autem corporis placeat quam magni necessitatibus nostrum sint asperiores ex distinctio explicabo voluptatum deserunt qui quidem perferendis facere! Suscipit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam modi explicabo minus rem similique dolor delectus necessitatibus itaque magnam ex quaerat neque natus nobis, doloremque, ea repellat quos eos at!</p>
+        <h2>Subtítulo do exercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores? Illum consectetur fugit voluptatibus provident, placeat dolores quas, facere deserunt libero reprehenderit harum, nostrum quaerat sed vitae necessitatibus nesciunt molestiae!</p>
+    </div>
+</body>
+</html>
