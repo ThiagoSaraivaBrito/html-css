@@ -7,8 +7,14 @@
     <title>Tabelas</title>
     <style>
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         table {
             border-collapse: collapse;
+            width: 400px;
+            position: relative;
         }
         
         td , th {
@@ -16,14 +22,35 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead , tfoot {
             background-color: gray;
             color: white;
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
 
         .numero {
             text-align: right;
         }
+
+        tbody > tr:nth-child(even) {
+            background-image: linear-gradient(to right, rgba(45, 80, 255, 0.646) , rgb(156, 207, 255));
+        } 
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        } /* odd: ímpar     even: par */
 
     </style>
 </head>
@@ -32,6 +59,7 @@
     <!-- 
         Anatomia para tabelas grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -41,10 +69,13 @@
      -->
 
      <table>
+        <caption>
+            População das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -160,11 +191,46 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>200 000 000</strong></td>
             </tr>
         </tfoot>
      </table>
-     
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis, repudiandae qui placeat repellat veritatis nihil, quo sed at tempore beatae soluta deserunt ratione aliquam est fugiat consequuntur sint aliquid!
+     Vitae temporibus tempora quidem commodi? Sequi officia minima mollitia non provident cupiditate itaque blanditiis praesentium illum nemo culpa id laudantium voluptates sit esse animi nostrum, laborum consequatur fugiat autem atque!
+     Officiis, labore quam harum similique amet sequi asperiores. Saepe, voluptates ad in quam architecto quisquam officiis eaque omnis quibusdam recusandae, dignissimos esse laborum sequi quo voluptas iure, nihil quis labore.
+     Quam aut suscipit similique nemo id, minima nisi enim vero facere? Nam nihil veniam asperiores, aut alias architecto facilis assumenda, explicabo cum omnis exercitationem doloribus odit reprehenderit quidem fuga. Rem.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Alias ducimus iure commodi atque! Neque odit modi aut culpa, voluptatibus error dolore temporibus molestias. Excepturi vel impedit sed laboriosam. Magnam, iste repudiandae. Saepe, aperiam pariatur corrupti ipsum cupiditate accusamus.
+     Totam sapiente eius vel sequi quam. Consequuntur atque fugiat, cumque eligendi ut sit distinctio qui officia accusamus, neque velit sequi! Exercitationem voluptatibus illo reprehenderit eum facere aliquid optio repudiandae ratione!
+     Corporis alias mollitia optio dignissimos ab ullam tempore ipsum facere voluptas error iusto a asperiores quaerat, nesciunt, repudiandae animi quo eaque ratione doloribus reprehenderit? Dolor similique quo impedit accusamus expedita.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis, repudiandae qui placeat repellat veritatis nihil, quo sed at tempore beatae soluta deserunt ratione aliquam est fugiat consequuntur sint aliquid!
+     Vitae temporibus tempora quidem commodi? Sequi officia minima mollitia non provident cupiditate itaque blanditiis praesentium illum nemo culpa id laudantium voluptates sit esse animi nostrum, laborum consequatur fugiat autem atque!
+     Officiis, labore quam harum similique amet sequi asperiores. Saepe, voluptates ad in quam architecto quisquam officiis eaque omnis quibusdam recusandae, dignissimos esse laborum sequi quo voluptas iure, nihil quis labore.
+     Quam aut suscipit similique nemo id, minima nisi enim vero facere? Nam nihil veniam asperiores, aut alias architecto facilis assumenda, explicabo cum omnis exercitationem doloribus odit reprehenderit quidem fuga. Rem.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Alias ducimus iure commodi atque! Neque odit modi aut culpa, voluptatibus error dolore temporibus molestias. Excepturi vel impedit sed laboriosam. Magnam, iste repudiandae. Saepe, aperiam pariatur corrupti ipsum cupiditate accusamus.
+     Totam sapiente eius vel sequi quam. Consequuntur atque fugiat, cumque eligendi ut sit distinctio qui officia accusamus, neque velit sequi! Exercitationem voluptatibus illo reprehenderit eum facere aliquid optio repudiandae ratione!
+     Corporis alias mollitia optio dignissimos ab ullam tempore ipsum facere voluptas error iusto a asperiores quaerat, nesciunt, repudiandae animi quo eaque ratione doloribus reprehenderit? Dolor similique quo impedit accusamus expedita.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis, repudiandae qui placeat repellat veritatis nihil, quo sed at tempore beatae soluta deserunt ratione aliquam est fugiat consequuntur sint aliquid!
+     Vitae temporibus tempora quidem commodi? Sequi officia minima mollitia non provident cupiditate itaque blanditiis praesentium illum nemo culpa id laudantium voluptates sit esse animi nostrum, laborum consequatur fugiat autem atque!
+     Officiis, labore quam harum similique amet sequi asperiores. Saepe, voluptates ad in quam architecto quisquam officiis eaque omnis quibusdam recusandae, dignissimos esse laborum sequi quo voluptas iure, nihil quis labore.
+     Quam aut suscipit similique nemo id, minima nisi enim vero facere? Nam nihil veniam asperiores, aut alias architecto facilis assumenda, explicabo cum omnis exercitationem doloribus odit reprehenderit quidem fuga. Rem.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Alias ducimus iure commodi atque! Neque odit modi aut culpa, voluptatibus error dolore temporibus molestias. Excepturi vel impedit sed laboriosam. Magnam, iste repudiandae. Saepe, aperiam pariatur corrupti ipsum cupiditate accusamus.
+     Totam sapiente eius vel sequi quam. Consequuntur atque fugiat, cumque eligendi ut sit distinctio qui officia accusamus, neque velit sequi! Exercitationem voluptatibus illo reprehenderit eum facere aliquid optio repudiandae ratione!
+     Corporis alias mollitia optio dignissimos ab ullam tempore ipsum facere voluptas error iusto a asperiores quaerat, nesciunt, repudiandae animi quo eaque ratione doloribus reprehenderit? Dolor similique quo impedit accusamus expedita.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis, repudiandae qui placeat repellat veritatis nihil, quo sed at tempore beatae soluta deserunt ratione aliquam est fugiat consequuntur sint aliquid!
+     Vitae temporibus tempora quidem commodi? Sequi officia minima mollitia non provident cupiditate itaque blanditiis praesentium illum nemo culpa id laudantium voluptates sit esse animi nostrum, laborum consequatur fugiat autem atque!
+     Officiis, labore quam harum similique amet sequi asperiores. Saepe, voluptates ad in quam architecto quisquam officiis eaque omnis quibusdam recusandae, dignissimos esse laborum sequi quo voluptas iure, nihil quis labore.
+     Quam aut suscipit similique nemo id, minima nisi enim vero facere? Nam nihil veniam asperiores, aut alias architecto facilis assumenda, explicabo cum omnis exercitationem doloribus odit reprehenderit quidem fuga. Rem.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Tempora deserunt quibusdam vitae quaerat ad. Repellat sequi aperiam minima natus voluptatem, adipisci quam ipsa, vitae nam nulla facilis odio quaerat eligendi laudantium cum quis cumque sint atque maiores nemo.
+     Alias ducimus iure commodi atque! Neque odit modi aut culpa, voluptatibus error dolore temporibus molestias. Excepturi vel impedit sed laboriosam. Magnam, iste repudiandae. Saepe, aperiam pariatur corrupti ipsum cupiditate accusamus.
+     Totam sapiente eius vel sequi quam. Consequuntur atque fugiat, cumque eligendi ut sit distinctio qui officia accusamus, neque velit sequi! Exercitationem voluptatibus illo reprehenderit eum facere aliquid optio repudiandae ratione!
+     Corporis alias mollitia optio dignissimos ab ullam tempore ipsum facere voluptas error iusto a asperiores quaerat, nesciunt, repudiandae animi quo eaque ratione doloribus reprehenderit? Dolor similique quo impedit accusamus expedita.</p>
 </body>
 </html>
